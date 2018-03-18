@@ -19,7 +19,14 @@ public class PistaController : MonoBehaviour {
 		currentTiles = new List<GameObject> ();
 		playerTransf = GameObject.FindGameObjectWithTag ("player").transform;
 		for (int x =0 ; x < qtdeTilesNaTela; x++){
-			GeradorTiles ();
+
+			if (x < 2) {
+				GeradorTiles (0);
+			} else {
+				GeradorTiles ();
+			}
+
+
 		}
 	}
 	
@@ -29,6 +36,8 @@ public class PistaController : MonoBehaviour {
 			GeradorTiles ();
 			LimpadorDeTiles ();
 		}
+
+		SumScore.Add(Mathf.RoundToInt(Time.deltaTime * 10));
 		
 	}
 

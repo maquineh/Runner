@@ -49,6 +49,11 @@
      <Compile Include="Assets\Scripts\JogadorMovimentacao.cs" />
      <Compile Include="Assets\Scripts\NormalizaPulo.cs" />
      <Compile Include="Assets\Scripts\PistaController.cs" />
+     <Compile Include="Assets\sumScore\Example\SumScoreExample.cs" />
+     <Compile Include="Assets\sumScore\Scripts\SumScore.cs" />
+     <Compile Include="Assets\sumScore\Scripts\SumScoreManager.cs" />
+     <None Include="Assets\sumScore\LICENSE.txt" />
+     <None Include="Assets\sumScore\README.md.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
