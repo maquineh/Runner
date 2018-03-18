@@ -1,10 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PistaController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NormalizaPulo.cs">
     <Files>
-      <File FileName="Assets\Scripts\JogadorMovimentacao.cs" Line="35" Column="3" />
-      <File FileName="Assets\Scripts\NormalizaPulo.cs" Line="13" Column="4" />
-      <File FileName="Assets\Scripts\PistaController.cs" Line="35" Column="34" />
+      <File FileName="Assets\Scripts\JogadorMovimentacao.cs" Line="31" Column="42" />
+      <File FileName="Assets\Scripts\NormalizaPulo.cs" Line="18" Column="3" />
+      <File FileName="Assets\Scripts\PistaController.cs" Line="15" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

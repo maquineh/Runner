@@ -28,7 +28,7 @@ public class JogadorMovimentacao : MonoBehaviour {
 		}
 
 		if(Input.GetKeyDown(KeyCode.Space)){
-			rigidBody.velocity = new Vector3 (0, 2, 0) * velocidadePulo;
+			rigidBody.velocity = new Vector3 (0, 3, 0) * velocidadePulo;
 		}
 
 		transform.Translate (Vector3.forward  * velocidade * Time.deltaTime);		

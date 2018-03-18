@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NormalizaPulo : MonoBehaviour {
 	public float quedaMult = 2.5f;
-	public float puloMenorMult = 2f;
+	public float puloMenorMult = 3f;
 	public Rigidbody rigidBody;
 
 	void Update(){
