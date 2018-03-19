@@ -25,8 +25,6 @@ public class PistaController : MonoBehaviour {
 			} else {
 				GeradorTiles ();
 			}
-
-
 		}
 	}
 	
@@ -36,9 +34,7 @@ public class PistaController : MonoBehaviour {
 			GeradorTiles ();
 			LimpadorDeTiles ();
 		}
-
 		SumScore.Add(Mathf.RoundToInt(Time.deltaTime * 10));
-		
 	}
 
 	private void LimpadorDeTiles(){
@@ -56,7 +52,6 @@ public class PistaController : MonoBehaviour {
 		gameObject.transform.position = Vector3.right * spawnerEmX;
 		spawnerEmX += tileInicialLen;
 		currentTiles.Add (gameObject);
-		Debug.Log (currentTiles.ToArray ().Length);
 	}
 
 	private int ProximoPrefabTile(){
@@ -69,11 +64,8 @@ public class PistaController : MonoBehaviour {
 
 		while (indiceGerado == ultimoIndiceGerado) {
 			indiceGerado = Random.Range (0, pistaPrefabs.Length);
-			Debug.Log (indiceGerado);
 		}
-
 		ultimoIndiceGerado = indiceGerado;
-
 		return indiceGerado;
 
 	}
