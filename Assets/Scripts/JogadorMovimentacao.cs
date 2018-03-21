@@ -13,6 +13,8 @@ public class JogadorMovimentacao : MonoBehaviour {
 	private Animator animator;
 	private bool onTheGround = true;
 
+	private float startAnimacao = 3.0f;
+
 	private float velocidadeVertical = 0.0f;
 	private float gravidade = 11.0f;
 
@@ -25,6 +27,11 @@ public class JogadorMovimentacao : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		if(Time.time < startAnimacao){
+			controller.Move (Vector3.right * 0 * Time.deltaTime);
+			return;
+		}
 
 		vetorMovimento = Vector3.zero;
 
@@ -55,7 +62,7 @@ public class JogadorMovimentacao : MonoBehaviour {
 		checaPontuacao (SumScore.Score);
 	}
 
-	void OnCollisionEnter(Collision col){
+	/*void OnCollisionEnter(Collision col){
 		if (col.gameObject.tag == "Ground") {
 			onTheGround = true;
 		}
@@ -73,24 +80,42 @@ public class JogadorMovimentacao : MonoBehaviour {
 			Debug.Log ("GameOver");
 		}
 
+	}*/
+
+	//Após pesquisar verifiquei que este evento gerencia melhor as colisões do que o OnCollisionEnter que tava meio bugado
+	private void OnControllerColliderHit(ControllerColliderHit hit){
+		Debug.Log ("Ponto em x: " + hit.point.x);
+		Debug.Log ("Comparador:" + transform.position.x + controller.radius);
+		Debug.Log (hit.point.x > transform.position.x + controller.radius);
+		if (hit.point.x > transform.position.x + controller.radius) {
+			GameOver ();
+		}
 	}
-		
+
+	private void GameOver(){
+		Debug.Log("Faleceu");
+	}
+
 	private void checaPontuacao(int pontos){
 
 		if (pontos > 2000) {
-			velocidade = 11;
+			velocidade = 4f;
 		}
 
-		if (pontos > 9000) {
-			velocidade = 13;
+		if (pontos > 5000) {
+			velocidade = 4.5f;
 		}
 
-		if(pontos > 13000){
-			velocidade = 15;
+		if(pontos > 7000){
+			velocidade = 5f;
 		}
 
-		if (pontos > 18000) {
-			velocidade = 17;
+		if (pontos > 10000) {
+			velocidade = 5.5f;
+		}
+
+		if (pontos > 12000) {
+			velocidade = 6.0f;
 		}
 	}
 }

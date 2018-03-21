@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\JogadorMovimentacao.cs">
     <Files>
-      <File FileName="Assets\Scripts\JogadorMovimentacao.cs" Line="35" Column="42" />
-      <File FileName="Assets\Scripts\NormalizaPulo.cs" Line="18" Column="5" />
-      <File FileName="Assets\Scripts\PistaController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\JogadorMovimentacao.cs" Line="91" Column="11" />
+      <File FileName="Assets\Scripts\CameraController.cs" Line="13" Column="2" />
+      <File FileName="Assets\sumScore\Scripts\SumScore.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
